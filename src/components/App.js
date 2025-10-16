@@ -12,7 +12,7 @@ const App = () => {
   return (
    <AuthContext.Provider value={authText}>
      <h1>Click on checkbox to get authenticated</h1>
-     <p>{authText}</p>
+     <p className="authText">{authText}</p>
      <input type="checkbox" id="authCheckbox" onClick={handleClick}/>
      <label htmlFor="authCheckbox">I'm not a robot</label>
    </AuthContext.Provider>
